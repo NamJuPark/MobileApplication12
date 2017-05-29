@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mobileapplication12_submit.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background = "#d2fbff">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:paddingTop="20dp"
+            android:text="메뉴 이미지 변경 간격(초)  "
+             />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="#fffcfc"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="처음으로"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:text="목 마를 땐 역시!"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/start"
+            android:onClick="onClick"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_below="@+id/imageView"
+            android:textSize="30dp"
+            android:text="시작부터 1초"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:id="@+id/tvCount"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
